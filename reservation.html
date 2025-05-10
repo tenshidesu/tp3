@@ -20,12 +20,85 @@
         <main>
            <section>
             <h1>Réservation</h1>
-            <from id="frm-reservation" > </from>
+            <from id="frm-reservation" action="confirmation" > </from>
+            <fieldset>
+                <legend>Information personnelles</legend>
+                <div>
+                  <label for="txt-prenom">Prénom</label>
+                  <input type="text" id="txt-prenom" name="txt-prenom" required>
+                </div>
+                <div>
+                    <label for="txt-prenom">nom</label>
+                    <input type="text" id="txt-nom" name="txt-nom" required>
+                </div>
+                <div>
+                    <label for="txt-prenom">Téléphone</label>
+                    <input type="tel" id="tel-client" name="tel-client" required>
+                </div>
+                  <div>
+                    <label for="txt-prenom">Courriel</label>
+                    <input type="email" id="email-client" name="email-client" required>
+                  </div>
+
+             </fieldset>
+             <fieldset>
+                   <legend>Détails de la Réservation</legend>
+                   <div>
+                    <label for="nbr-personnes">Nombre de personne</label>
+                    <input type="number" name="nbr-personnes" min="1" required >
+                   </div>
+                   <div>
+                    <label for="date-reservation">Date</label>
+                    <input type="date" id="date-reservation" name="date-reservation" required>
+                    <div>
+                        <label for="heure-reservation">Heure</label>
+                        <select  id="heure-reservation" name="heure-reservation" required>
+                            <option value="">-- Sélectionnez --</option>
+                            <option value="12:00">12:00</option>
+                            <option value="12:30">12:30</option>
+                            <option value="13:00">13:00</option>
+                            <option value="13:30">13:30</option>
+                            <option value="17:00">17:00</option>
+                            <option value="17:30">17:30</option>
+                            <option value="18:00">18:00</option>
+                            <option value="18:30">18:30</option>
+                            <option value="19:00">19:00</option>
+                            <option value="19:30">19:30</option>
+                            <option value="20:00">20:00</option>
+                            <option value="20:30">20:30</option>
+                            <option value="21:00">21:00</option>
+
+                        </select>
+                            
+                    </div>
+                  <div>
+                    l<input type="radio" id="rdo-salle" name="rdo-salle" value="salle" checked>
+
+                  </div>
+                   
+
+             </fieldset>
+             <fieldset>
+                <legend>Laisser un commentaire</legend>
+                <div>
+                    <label for="txt-commentaire">commentaire</label>
+                    <textarea id="txt-commentaire" name="txt-commentaire"></textarea>
+                </div>
+                <div>
+                    <input type="checkbox" id="ckb-infolettre" name="ckb-infolettre">
+                    <label for="ckb-infolettre">Voulez-vous vous inscrire a l'infolettre*</label>
+                </div>
+             </fieldset>
 
 
            </section>
 
 
         </main>
+        <footer>
+            <p>Réalisé  par : Ange Moïseli Atangane Fontsa</p>
+            <p>interface web - Cégep Garneau - Hiver 2024 </p>
+            
+        </footer>
 </body>
 </html>
