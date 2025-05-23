@@ -9,14 +9,14 @@
 
 body{
     font-family: Georgia, 'Times New Roman', Times, serif;
-    color: darkgoldenrod;
-    background-color: #f9f9f9;
+    color: #f0edd3;
+    background-color:#9594a1;
 }
 
 h1, h2, h3{
     font-family: Arial, Helvetica, sans-serif;
     margin-bottom: 1rem;
-    color: dodgerblue;
+    color:#f0edd3;
 }
 
 /* Conteneur  */
@@ -66,11 +66,13 @@ nav ul {
 
 nav a {
     text-decoration: none;
-
+     color: #bac5d1;
 }
 
+
+
 nav a:hover {
-    color: darkblue;
+    color:#9594a1;
 }
 
 /* Bouton  */
@@ -80,6 +82,7 @@ nav a:hover {
     padding: 0.5rem 2rem;
     border-radius: 4px;
     text-decoration: none;
+    color: #bac5d1;
 }
 
 .btn :hover{
@@ -90,11 +93,160 @@ nav a:hover {
 
 .temoignages{
     padding: 4rem 0;
-    background-color: coral;
+    background-color:#f0edd3;
+    
 }
+
 
 .temoignage{
     background-color: #f9f9f9;
-    padding: 1rem;
+    color: #3161aa;
+    width: 100%;
+    margin: 3rem 0;
+    padding: 3rem 0;
     box-shadow: 0 2px 4px black;
+    border-radius: 10px;
+    display: flex;
+    flex-direction:column;
+    align-items: center;
 }
+   
+
+
+.temoignage h2{
+color:#3161aa ;
+font-size: 2rem;
+margin-bottom: 0.5rem;
+}
+
+.temoignage h3{
+color:#3161aa ;
+font-size: 1.5rem;
+margin-bottom: 2rem;
+}
+
+
+.section-temoignage{
+    width: 90%;
+    max-width: 1200px ;
+    border-radius: 8px;
+}
+
+.conteneur-temoignage{
+    display: flex;
+    justify-content: space-between;
+    border-radius: 8px;
+    flex-wrap: wrap;
+    gap: 2%;
+}
+
+
+.temoignage-carte{
+    background-color: #9594a1;
+    border: 1px solid black;
+    border-radius: 8px;
+    padding: 1.5rem;
+    width: 50%;
+    margin-bottom: 2rem;
+    box-shadow: 0 4px 8px black;
+    color: #f0edd3;
+}
+
+
+
+.temoignage p {
+ margin-bottom: 1rem;
+}
+
+.temoignage .auteur {
+    font-weight: 500 ;
+}
+
+/* Formulaire */
+
+.reservation{
+    padding: 3rem 0;
+}
+
+fieldset{
+border: 1px salmon;
+border-radius: 8px;
+padding: 1.5rem;
+margin-bottom: 2rem;
+
+}
+
+.from-group{
+    margin-bottom: 1.5rem;
+}
+
+.from-group label {
+    display: block;
+    margin-bottom: 1rem;
+    font-weight: 500;
+}
+.from-group input[type="text"], .from-group input[type="tel"],.from-group input[type="email"],
+.from-group input[type="date"],.from-group input[type="number"],.from-group select, .from-group textarea{
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid black;
+    border-radius: 4px;
+}
+
+/**/
+
+
+legend{
+    padding: 0 1rem;
+    font-weight: 500;
+}
+
+.from-group textarea {
+    min-height: 120px;
+}
+
+.radio-group{
+    display: flex;
+    gap: 1rem;
+}
+
+.checkbox{
+    display: flex;
+    align-items: center;
+}
+
+.checkbox input{
+    margin-right: 0.5rem;
+
+}
+
+/* adaptation screen  */
+
+@media screen and (max-width: 960px){ 
+    header .container {
+        flex-direction: column;
+    }
+
+    nav ul {
+    margin-top: 1rem;
+    }
+
+
+    
+}
+
+
+@media screen and (max-width: 570px){ 
+   
+
+    nav ul {
+    flex-direction: column;
+        align-items: center;
+    }
+ nav li {
+    margin: 0.5rem 0;
+ }
+    
+    
+}
+
