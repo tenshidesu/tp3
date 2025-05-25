@@ -1,24 +1,29 @@
-<!DOCTYPE html>
-<html lang="fr">
-<head>
+    <!DOCTYPE html>
+    <html lang="fr">
+    <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
     <title>Oishī!!! - Commande</title>
-</head>
-<body>
+    </head>
+    <body>
     <header>
-        <nav>
-            <ul>
-                <li><a href="index.html">Accueil</a></li>
-                <li><a href="restaurant.html">Restaurant</a></li>
-                <li><a href="reservation.html">Reservation</a></li>
-                <li><a href="commande.html">Commande</a></li>
-            </ul>
+      <h1>Oishī !!!</h1>
+      <nav>
+          <ul>
+              <li><a class="btn" href="index.html">Accueil</a></li>
+              <li><a class="btn" href="restaurant.html">Restaurant</a></li>
+              <li><a class="btn" href="reservation.html">Reservation</a></li>
+              <li><a  class="btn"  href="commande.html">Commande</a></li>
+          </ul>
 
-        </nav>
-    </header>
+      </nav>
+
+
+  </header>
     <main>
-        <section>
+        <div class="commande-container">
+        <section class="commande-section">
             <h1>Ma commande</h1>
             <h2>Entrées</h2>
             <table>
@@ -54,6 +59,7 @@
                 </tbody>
             </table>
             <h2>Plats principaux</h2>
+            <table>
             <thead>
                 <tr>
                     <th>Nom du plat</th>
@@ -86,12 +92,13 @@
                     <td>23.99</td>
                     <td>28</td>
                     <td> Plateau de nigiri, maki ou sashimi,
-                         souvent accompagné de gingembre mariné, 
-                         wasabi et sauce soja.</td>
+                        souvent accompagné de gingembre mariné, 
+                        wasabi et sauce soja.</td>
                 </tr>
                 
 
             </tbody>
+            </table>
             <h2>Dessert</h2>
             <table>
                 <thead>
@@ -124,20 +131,24 @@
                     
 
                 </tbody>
-                <tfoot>
-                   <tr>
-                       <td>Sous-total:  30.22</td>
-                      <td>Taxe;    6.33</td>
-                       <td>------------------</td>
-                      <td>total:  36.55</td>
-                   </tr>
-                </tfoot>
-        </section>
+            </table>
+            </section>
+            <section class="facture-section">
+                <div class="facture-box">
+                    <p><strong>Sous-total: </stron>  30.22</p>
+                    <p><strong>Taxes :</strong>    6.33</p>
+                    <p>------------------</p>
+                    <p> <strong>   total: <strong>   36.55</p>
+                    <a href="#" class="btn-commande"  >Commander</a>  
+                </div>
+                </section>
+        </div>
+        
     </main>
     <footer>
         <p>Réalisé  par : Ange Moïseli Atangane Fontsa</p>
         <p>interface web - Cégep Garneau - Hiver 2024 </p>
-    
+
     </footer>
-</body>
-</html>
+    </body>
+    </html>
